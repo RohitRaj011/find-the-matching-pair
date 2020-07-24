@@ -58,7 +58,7 @@ function checkCards() {
       $(this).css("transform", "rotateY(180deg)");
       x1 = this.id;
     } else {
-      if (secondClick == false) {
+      if (secondClick == false && x1 != this.id) {
         secondClick = true;
         thirdClick = true;
         $(this).css("transform", "rotateY(180deg)");
