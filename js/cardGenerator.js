@@ -1,7 +1,7 @@
 export { generateGrids, generateCards, gameArr };
 import { checkCards } from "../js/gameAlgo.js";
 
-var maxCards = 6; //Total Cards
+var maxCards = 50; //Total Cards
 
 // Card Generator Classes and Functions
 class Card {
