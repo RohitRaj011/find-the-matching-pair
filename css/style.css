@@ -40,6 +40,7 @@ ul {
   height: 15.625rem;
   perspective: 1000px;
   margin: 1.25em;
+  cursor: pointer;
 }
 .flip-card-inner {
   position: relative;

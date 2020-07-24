@@ -1,7 +1,7 @@
 export { generateGrids, generateCards, gameArr };
 import { checkCards } from "../js/gameAlgo.js";
 
-var maxCards = 48; //Total Cards
+var maxCards = 6; //Total Cards
 
 // Card Generator Classes and Functions
 class Card {
@@ -61,6 +61,7 @@ function generateGrids() {
 
     flip_card.className = "flip-card";
     flip_card_inner.className = "flip-card-inner";
+    flip_card_inner.id = numberCards;
     flip_card_front.className = "flip-card-front";
     flip_card_back.className = "flip-card-back";
 

@@ -1,13 +1,8 @@
 import { generateGrids, generateCards } from "../js/cardGenerator.js";
 
 function load() {
-  generateGrids();
-  generateCards();
+  generateGrids(); //generate the grids
+  generateCards(); //generate cards + check for all pair-matching and game-sense
 }
 
 window.onload = load();
-
-// $(".flip-card-inner").click(function () {
-//   startTimer();
-//   $(this).css("transform", "rotateY(180deg)");
-// });
