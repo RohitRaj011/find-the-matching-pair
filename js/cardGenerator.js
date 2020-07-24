@@ -1,7 +1,6 @@
 export { maxCards, generateGrids, Deck };
 
-var maxCards = 32; //Total Cards
-var numberRow = 8; //no. of cards in each Row
+var maxCards = 48; //Total Cards
 
 // Card Generator Classes and Functions
 class Card {
@@ -49,18 +48,8 @@ class Deck {
   }
 }
 
-// To generate Rows depending upon Total Cards
-function rowGenerate() {
-  for (var row = 0; row < maxCards / numberRow; row++) {
-    var flex_container = document.createElement("div");
-    flex_container.className = "flex-container";
-    document.getElementById("cardWrapper").appendChild(flex_container);
-  }
-}
-
 // To generate Card Grids
 function generateGrids() {
-  rowGenerate();
   for (var numberCards = 0; numberCards < maxCards; numberCards++) {
     var flip_card = document.createElement("div");
     var flip_card_inner = document.createElement("div");
@@ -76,8 +65,6 @@ function generateGrids() {
     flip_card_inner.appendChild(flip_card_back);
     flip_card.appendChild(flip_card_inner);
 
-    document
-      .getElementsByClassName("flex-container")
-      [Math.floor(numberCards / numberRow)].appendChild(flip_card);
+    document.getElementById("cardWrapper").appendChild(flip_card);
   }
 }

@@ -26,9 +26,11 @@ h3 {
 }
 
 /* SECTION-2 */
-.flex-container {
-  display: flex;
-  flex-flow: row nowrap;
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, max-content));
+  grid-gap: 16px;
+  padding: initial;
   justify-content: center;
 }
 .flip-card {
@@ -60,12 +62,11 @@ h3 {
 }
 .flip-card-back {
   line-height: 15.625rem;
-  text-align: center;
   background-color: whitesmoke;
   transform: rotateY(180deg);
 }
 .section-2 .flip-card-back span {
-  font-size: 8vmin;
+  font-size: 5rem;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
