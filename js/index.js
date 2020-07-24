@@ -1,5 +1,4 @@
-import { generateGrids } from "../js/cardGenerator.js";
-import { generateCards } from "../js/gameAlgo.js";
+import { generateGrids, generateCards } from "../js/cardGenerator.js";
 
 function load() {
   generateGrids();
