@@ -32,6 +32,7 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(210px, max-content));
   grid-gap: 16px;
   padding: initial;
+  padding-right: 1rem;
   justify-content: center;
 }
 .flip-card {
